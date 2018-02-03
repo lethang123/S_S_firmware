@@ -37,6 +37,8 @@
 #include "gpio.h"
 
 /* USER CODE BEGIN Includes */
+#include "filenum.h"
+#include "circular_buffer.h"
 
 /* USER CODE END Includes */
 
@@ -44,7 +46,7 @@
 
 /* USER CODE BEGIN PV */
 /* Private variables ---------------------------------------------------------*/
-
+FILENUM(0x0000U)
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
