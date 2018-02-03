@@ -7,9 +7,6 @@
   
 #include "circular_buffer.h"
 
-#include <stdbool.h>
-#include <stdint.h>
-
 #include "filenum.h"
 FILENUM(0x0001U)
 

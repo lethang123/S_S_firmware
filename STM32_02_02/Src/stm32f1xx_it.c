@@ -41,7 +41,7 @@
 
 /* External variables --------------------------------------------------------*/
 extern UART_HandleTypeDef huart1;
-
+extern uint16_t byte_state_button;
 /******************************************************************************/
 /*            Cortex-M3 Processor Interruption and Exception Handlers         */ 
 /******************************************************************************/
@@ -224,6 +224,31 @@ void EXTI15_10_IRQHandler(void)
 }
 
 /* USER CODE BEGIN 1 */
-
+void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
+{
+	/* if button 3 */
+	if(GPIO_Pin == GPIO_PIN_10)
+	{
+		byte_state_button = byte_state_button | (0x0001<<3);
+	}
+	
+	/* if button 2 */
+		if(GPIO_Pin == GPIO_PIN_11)
+	{
+		byte_state_button = byte_state_button | (0x0001<<2);
+	}
+	
+	/* if button 1 */
+		if(GPIO_Pin == GPIO_PIN_12)
+	{
+		byte_state_button = byte_state_button | (0x0001<<1);
+	}
+	
+	/* if button 0 */
+		if(GPIO_Pin == GPIO_PIN_13)
+	{
+		byte_state_button = byte_state_button | (0x0001<<0);
+	}
+}
 /* USER CODE END 1 */
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/

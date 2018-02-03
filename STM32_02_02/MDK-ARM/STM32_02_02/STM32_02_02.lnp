@@ -9,6 +9,7 @@
 "stm32_02_02\stm32f1xx_hal_msp.o"
 "stm32_02_02\filenum.o"
 "stm32_02_02\circular_buffer.o"
+"stm32_02_02\check_state.o"
 "stm32_02_02\stm32f1xx_hal_tim_ex.o"
 "stm32_02_02\stm32f1xx_hal_pwr.o"
 "stm32_02_02\stm32f1xx_hal_flash.o"

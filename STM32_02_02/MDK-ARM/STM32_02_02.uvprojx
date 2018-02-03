@@ -472,6 +472,11 @@
               <FileType>1</FileType>
               <FilePath>..\Src\circular_buffer.c</FilePath>
             </File>
+            <File>
+              <FileName>check_state.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Src\check_state.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

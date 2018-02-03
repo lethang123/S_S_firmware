@@ -47,6 +47,8 @@
 /* USER CODE BEGIN PV */
 /* Private variables ---------------------------------------------------------*/
 FILENUM(0x0000U)
+
+uint16_t byte_state_button = 0x0000U;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
