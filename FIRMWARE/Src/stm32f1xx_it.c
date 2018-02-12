@@ -253,7 +253,7 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 {
-	check_state_button(GPIO_Pin);
+	check_state_button_it(GPIO_Pin);
 }
 
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)

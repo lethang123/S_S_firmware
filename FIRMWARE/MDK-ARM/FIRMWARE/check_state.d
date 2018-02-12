@@ -28,3 +28,5 @@ firmware\check_state.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h
 firmware\check_state.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
 firmware\check_state.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
 firmware\check_state.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+firmware\check_state.o: ../Inc/usart.h
+firmware\check_state.o: ../Inc/relay.h

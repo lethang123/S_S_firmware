@@ -8,6 +8,6 @@
 #include <stdbool.h>
 
 /* program */
-void check_state_button(uint16_t GPIO_Pin);
-	
+void check_state_button_it(uint16_t GPIO_Pin);
+void transmit_state_relay(void);
 #endif /* _CHECK_STATE_H */

@@ -8,7 +8,13 @@
 /* user include */
 #include "circular_buffer.h"
 
+typedef enum
+{
+	BYTE_HEAD_TRUE = 0,
+	BYTE_HEAD_FALSE
+}check_head_return_t;
+
 void COMMU_init(void);
-void COMMU_check_data_receive();
+void COMMU_get_data(void);
 
 #endif /* _COMMU_UART_H */

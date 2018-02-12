@@ -1,5 +1,5 @@
 firmware\commu_uart.o: ..\Src\commu_uart.c
-firmware\commu_uart.o: ../Inc/commu_uart.h
+firmware\commu_uart.o: ../Inc/usart.h
 firmware\commu_uart.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h
 firmware\commu_uart.o: ../Inc/stm32f1xx_hal_conf.h
 firmware\commu_uart.o: ../Inc/main.h
@@ -27,6 +27,8 @@ firmware\commu_uart.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h
 firmware\commu_uart.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h
 firmware\commu_uart.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
 firmware\commu_uart.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
+firmware\commu_uart.o: ../Inc/commu_uart.h
 firmware\commu_uart.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
 firmware\commu_uart.o: ../Inc/circular_buffer.h
-firmware\commu_uart.o: ../Inc/usart.h
+firmware\commu_uart.o: ../Inc/check_state.h
+firmware\commu_uart.o: ../Inc/relay.h
