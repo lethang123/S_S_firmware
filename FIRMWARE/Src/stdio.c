@@ -6,6 +6,8 @@
 #include "usart.h"
 #include <stdbool.h>
 
+UART_HandleTypeDef*  DEBUG = &huart2;
+
 /* Private function prototypes -----------------------------------------------*/
 #ifdef __GNUC__
   /* With GCC/RAISONANCE, small printf (option LD Linker->Libraries->Small printf
@@ -24,7 +26,7 @@ PUTCHAR_PROTOTYPE
 {
     /* Place your implementation of fputc here */
     /* e.g. write a character to the USART */
-    HAL_UART_Transmit(&huart2, (uint8_t *)&ch, 1, 100);
+    HAL_UART_Transmit(DEBUG, (uint8_t *)&ch, 1, 100);
 
 
     return ch;

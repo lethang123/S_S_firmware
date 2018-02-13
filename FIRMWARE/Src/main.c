@@ -45,7 +45,7 @@
 /* USER CODE BEGIN Includes */
 #include "check_state.h"
 #include "commu_uart.h"
-extern uint16_t  byte_state_button;
+
 
 /* USER CODE END Includes */
 

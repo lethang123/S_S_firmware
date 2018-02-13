@@ -41,6 +41,7 @@
 
 extern volatile uint8_t commu_buf_rx;
 extern circular_buf_t cbuf1;
+extern UART_HandleTypeDef* COMMU;
 /* USER CODE END 0 */
 
 /* External variables --------------------------------------------------------*/
@@ -253,7 +254,7 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 {
-	check_state_button_it(GPIO_Pin);
+	CHECK_button_it(GPIO_Pin);
 }
 
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
@@ -261,7 +262,7 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 	if(huart->Instance == USART1)
 	{
 		circular_buf_put(&cbuf1,commu_buf_rx);
-		HAL_UART_Receive_IT(&huart1,(uint8_t *)&commu_buf_rx,1);
+		HAL_UART_Receive_IT(COMMU,(uint8_t *)&commu_buf_rx,1);
 	}
 }
 /* USER CODE END 1 */

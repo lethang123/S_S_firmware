@@ -30,5 +30,4 @@ firmware\commu_uart.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
 firmware\commu_uart.o: ../Inc/commu_uart.h
 firmware\commu_uart.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
 firmware\commu_uart.o: ../Inc/circular_buffer.h
-firmware\commu_uart.o: ../Inc/check_state.h
 firmware\commu_uart.o: ../Inc/relay.h

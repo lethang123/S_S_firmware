@@ -15,6 +15,8 @@ typedef enum
 }check_head_return_t;
 
 void COMMU_init(void);
+void COMMI_trans_state_relay(void);
 void COMMU_get_data(void);
+
 
 #endif /* _COMMU_UART_H */

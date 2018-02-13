@@ -28,7 +28,7 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x5A791E23)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x5A791E23)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x5A791E23)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x5A791E23)
-F (../Src/stm32f1xx_it.c)(0x5A8023E7)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include-I C:\Users\ngocm\OneDrive\Documents\GitHub\S_S_firmware\FIRMWARE\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="515" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o firmware\stm32f1xx_it.o --omf_browse firmware\stm32f1xx_it.crf --depend firmware\stm32f1xx_it.d)
+F (../Src/stm32f1xx_it.c)(0x5A829126)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include-I C:\Users\ngocm\OneDrive\Documents\GitHub\S_S_firmware\FIRMWARE\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="515" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o firmware\stm32f1xx_it.o --omf_browse firmware\stm32f1xx_it.crf --depend firmware\stm32f1xx_it.d)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5A791E23)
 I (../Inc/stm32f1xx_hal_conf.h)(0x5A7AB392)
 I (../Inc/main.h)(0x5A7AB392)
@@ -56,10 +56,10 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x5A791E23)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x5A791E23)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x5A791E23)
 I (../Inc/stm32f1xx_it.h)(0x5A7AB392)
-I (../Inc/check_state.h)(0x5A8023C0)
+I (../Inc/check_state.h)(0x5A828933)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x54C253C8)
-I (../Inc/circular_buffer.h)(0x5A7C491B)
-F (../Src/main.c)(0x5A7ABFC0)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include-I C:\Users\ngocm\OneDrive\Documents\GitHub\S_S_firmware\FIRMWARE\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="515" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o firmware\main.o --omf_browse firmware\main.crf --depend firmware\main.d)
+I (../Inc/circular_buffer.h)(0x5A828EF6)
+F (../Src/main.c)(0x5A818A8C)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include-I C:\Users\ngocm\OneDrive\Documents\GitHub\S_S_firmware\FIRMWARE\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="515" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o firmware\main.o --omf_browse firmware\main.crf --depend firmware\main.d)
 I (../Inc/main.h)(0x5A7AB392)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5A791E23)
 I (../Inc/stm32f1xx_hal_conf.h)(0x5A7AB392)
@@ -89,10 +89,10 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x5A791E23)
 I (../Inc/tim.h)(0x5A7AB391)
 I (../Inc/usart.h)(0x5A7AB392)
 I (../Inc/gpio.h)(0x5A7AB391)
-I (../Inc/check_state.h)(0x5A8023C0)
+I (../Inc/check_state.h)(0x5A828933)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x54C253C8)
-I (../Inc/commu_uart.h)(0x5A7FB58E)
-I (../Inc/circular_buffer.h)(0x5A7C491B)
+I (../Inc/commu_uart.h)(0x5A819521)
+I (../Inc/circular_buffer.h)(0x5A828EF6)
 F (../Src/gpio.c)(0x5A7AB391)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include-I C:\Users\ngocm\OneDrive\Documents\GitHub\S_S_firmware\FIRMWARE\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="515" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o firmware\gpio.o --omf_browse firmware\gpio.crf --depend firmware\gpio.d)
 I (../Inc/gpio.h)(0x5A7AB391)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5A791E23)
@@ -177,8 +177,8 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x5A791E23)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x5A791E23)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x5A791E23)
 I (../Inc/gpio.h)(0x5A7AB391)
-F (..\Src\check_state.c)(0x5A8053CE)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include-I C:\Users\ngocm\OneDrive\Documents\GitHub\S_S_firmware\FIRMWARE\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="515" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o firmware\check_state.o --omf_browse firmware\check_state.crf --depend firmware\check_state.d)
-I (../Inc/check_state.h)(0x5A8023C0)
+F (..\Src\check_state.c)(0x5A828BBB)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include-I C:\Users\ngocm\OneDrive\Documents\GitHub\S_S_firmware\FIRMWARE\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="515" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o firmware\check_state.o --omf_browse firmware\check_state.crf --depend firmware\check_state.d)
+I (../Inc/check_state.h)(0x5A828933)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5A791E23)
 I (../Inc/stm32f1xx_hal_conf.h)(0x5A7AB392)
 I (../Inc/main.h)(0x5A7AB392)
@@ -207,9 +207,9 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x5A791E23)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x5A791E23)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x54C253C8)
 I (../Inc/usart.h)(0x5A7AB392)
-I (../Inc/relay.h)(0x5A804B0F)
-F (..\Src\circular_buffer.c)(0x5A7FB599)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include-I C:\Users\ngocm\OneDrive\Documents\GitHub\S_S_firmware\FIRMWARE\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="515" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o firmware\circular_buffer.o --omf_browse firmware\circular_buffer.crf --depend firmware\circular_buffer.d)
-I (../Inc/circular_buffer.h)(0x5A7C491B)
+I (../Inc/relay.h)(0x5A828522)
+F (..\Src\circular_buffer.c)(0x5A82902B)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include-I C:\Users\ngocm\OneDrive\Documents\GitHub\S_S_firmware\FIRMWARE\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="515" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o firmware\circular_buffer.o --omf_browse firmware\circular_buffer.crf --depend firmware\circular_buffer.d)
+I (../Inc/circular_buffer.h)(0x5A828EF6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5A791E23)
 I (../Inc/stm32f1xx_hal_conf.h)(0x5A7AB392)
 I (../Inc/main.h)(0x5A7AB392)
@@ -237,7 +237,7 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x5A791E23)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x5A791E23)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x5A791E23)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x54C253C8)
-F (..\Src\commu_uart.c)(0x5A8053BF)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include-I C:\Users\ngocm\OneDrive\Documents\GitHub\S_S_firmware\FIRMWARE\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="515" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o firmware\commu_uart.o --omf_browse firmware\commu_uart.crf --depend firmware\commu_uart.d)
+F (..\Src\commu_uart.c)(0x5A8290A1)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include-I C:\Users\ngocm\OneDrive\Documents\GitHub\S_S_firmware\FIRMWARE\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="515" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o firmware\commu_uart.o --omf_browse firmware\commu_uart.crf --depend firmware\commu_uart.d)
 I (../Inc/usart.h)(0x5A7AB392)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5A791E23)
 I (../Inc/stm32f1xx_hal_conf.h)(0x5A7AB392)
@@ -265,13 +265,12 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x5A791E23)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x5A791E23)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x5A791E23)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x5A791E23)
-I (../Inc/commu_uart.h)(0x5A7FB58E)
+I (../Inc/commu_uart.h)(0x5A819521)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x54C253C8)
-I (../Inc/circular_buffer.h)(0x5A7C491B)
-I (../Inc/check_state.h)(0x5A8023C0)
-I (../Inc/relay.h)(0x5A804B0F)
-F (..\Src\relay.c)(0x5A804E5F)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include-I C:\Users\ngocm\OneDrive\Documents\GitHub\S_S_firmware\FIRMWARE\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="515" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o firmware\relay.o --omf_browse firmware\relay.crf --depend firmware\relay.d)
-I (../Inc/relay.h)(0x5A804B0F)
+I (../Inc/circular_buffer.h)(0x5A828EF6)
+I (../Inc/relay.h)(0x5A828522)
+F (..\Src\relay.c)(0x5A828A8A)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include-I C:\Users\ngocm\OneDrive\Documents\GitHub\S_S_firmware\FIRMWARE\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="515" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o firmware\relay.o --omf_browse firmware\relay.crf --depend firmware\relay.d)
+I (../Inc/relay.h)(0x5A828522)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5A791E23)
 I (../Inc/stm32f1xx_hal_conf.h)(0x5A7AB392)
 I (../Inc/main.h)(0x5A7AB392)
@@ -299,7 +298,7 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x5A791E23)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x5A791E23)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x5A791E23)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x54C253C8)
-F (..\Src\stdio.c)(0x5A753D31)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include-I C:\Users\ngocm\OneDrive\Documents\GitHub\S_S_firmware\FIRMWARE\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="515" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o firmware\stdio.o --omf_browse firmware\stdio.crf --depend firmware\stdio.d)
+F (..\Src\stdio.c)(0x5A827C19)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include-I C:\Users\ngocm\OneDrive\Documents\GitHub\S_S_firmware\FIRMWARE\MDK-ARM\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="515" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o firmware\stdio.o --omf_browse firmware\stdio.crf --depend firmware\stdio.d)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54C253C8)
 I (../Inc/usart.h)(0x5A7AB392)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5A791E23)
