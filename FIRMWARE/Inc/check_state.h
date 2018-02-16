@@ -18,7 +18,7 @@
  * MACROS
  */
  
-// Button pin
+/* Button pin define */
 #define BUTTON_1       GPIO_PIN_10
 #define BUTTON_2       GPIO_PIN_11
 #define BUTTON_3       GPIO_PIN_12

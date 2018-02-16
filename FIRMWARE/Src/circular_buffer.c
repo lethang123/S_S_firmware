@@ -63,7 +63,7 @@ bool circular_buf_empty(circular_buf_t *cbuf)
 }
 
 /**
- * @brief        CIRCULAR BUFFER put data into circular buffer
+ * @brief       CIRCULAR BUFFER put data into circular buffer
  * 
  * @param[in]   *cbuf      address of circular buffer
  * @param[in]   data       data to put
@@ -85,15 +85,15 @@ void circular_buf_put(circular_buf_t *cbuf, uint8_t data)
 }
 
 /**
- * @brief        CIRCULAR BUFFER get data of circular buffer
+ * @brief       CIRCULAR BUFFER get data of circular buffer
  * 
  * @param[in]   *cbuf      address of circular buffer
  * @param[in]   *data      address data to get
  */
 void circular_buf_get(circular_buf_t *cbuf, uint8_t *data)
 {
-	// if not empty
-	if(!circular_buf_empty(cbuf))
+	/* if not empty and not loss data */
+	if(!circular_buf_empty(cbuf) && (cbuf->data_los  == false ))
   {
     *data = cbuf->buff[cbuf->tail];
      cbuf->tail = (cbuf->tail + 1) % cbuf->size;

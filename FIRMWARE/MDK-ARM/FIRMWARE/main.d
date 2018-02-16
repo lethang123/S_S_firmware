@@ -33,3 +33,4 @@ firmware\main.o: ../Inc/check_state.h
 firmware\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
 firmware\main.o: ../Inc/commu_uart.h
 firmware\main.o: ../Inc/circular_buffer.h
+firmware\main.o: ../Inc/relay.h

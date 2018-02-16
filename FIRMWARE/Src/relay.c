@@ -14,28 +14,28 @@
  * TYPEDEFS
  */
  
-// Result check bit
+/* Result check bit */
 typedef enum
 {
 	BIT_SAME = 0, // if two bit same
 	BIT_NOT_SAME
 }check_bit_t;
 
-// Define bit point
+/* Define bit point */
 typedef enum
 {
 	bit_one = 0, // bit one
-	bit_two,
-	bit_three,
-	bit_four
+	bit_two = 4,
+	bit_three = 8,
+	bit_four = 12
 }bit_point;
 
 /*********************************************************************************
  * GLOBAL VARIABLES
  */
 
-// byte state of relay last
-uint16_t byte_state_relay_last;
+/* byte state of relay last */
+uint16_t byte_state_relay_last = 0x0000;
 
 /**
  *  @brief      check byte same of 
@@ -71,7 +71,7 @@ static void relay_toggle_state_pin(uint16_t RELAY_Pin)
 }
 
 /**
- *  @brief      RELAY toogle state by byte control
+ *  @brief       RELAY toogle state by byte control
  *  
  *  @param[in]   byte_state_control      byte for control state relay
  */
@@ -103,5 +103,5 @@ void RELAY_action(uint16_t byte_state_control)
 		{
 			relay_toggle_state_pin(RELAY_4);
 		}
-}
+  }
 }

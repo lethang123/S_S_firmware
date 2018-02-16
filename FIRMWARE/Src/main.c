@@ -45,15 +45,15 @@
 /* USER CODE BEGIN Includes */
 #include "check_state.h"
 #include "commu_uart.h"
-
-
+#include "relay.h"
 /* USER CODE END Includes */
 
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
 /* Private variables ---------------------------------------------------------*/
-
+extern bool flag_button_toggle_state;
+extern uint16_t byte_state_relay_last;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -101,11 +101,18 @@ int main(void)
   MX_USART2_UART_Init();
   MX_TIM2_Init();
   /* USER CODE BEGIN 2 */
+	
+	/*******************************************************************************/
+	/* Start timer 3 interrupt */
    HAL_TIM_Base_Start_IT(&htim2);
+	 
+	 /* DEBUG */
 	 printf("STM32 START ... \r\n");
 	 
-	 
+	 /* communication usart init */
 	 COMMU_init();
+	 
+	/********************************************************************************/
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -116,7 +123,16 @@ int main(void)
   /* USER CODE END WHILE */
 
   /* USER CODE BEGIN 3 */
-
+  if(flag_button_toggle_state == true)
+	 {
+	//	 COMMU_trans_state_relay();
+		 printf("%d\r\n",byte_state_relay_last);
+	//	 RELAY_action(byte_state_relay_last);
+		 flag_button_toggle_state = false;
+	 }
+	// COMMU_get_data_control();
+//		printf("hello\r\n");
+//		HAL_Delay(500);
   }
   /* USER CODE END 3 */
 
