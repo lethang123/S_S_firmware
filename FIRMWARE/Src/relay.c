@@ -103,5 +103,9 @@ void RELAY_action(uint16_t byte_state_control)
 		{
 			relay_toggle_state_pin(RELAY_4);
 		}
+		
+		/* update state relay */
+		byte_state_relay_last = byte_state_control;
+		
   }
 }

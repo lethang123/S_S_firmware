@@ -14,9 +14,6 @@
 /*********************************************************************************
  * EXTERNAL VARIABLES
  */
- 
-/* byte state of relay last */
-extern uint16_t byte_state_relay_last;
 
 /*********************************************************************************
  * FLAG
@@ -30,7 +27,7 @@ bool flag_button_toggle_state = false;
  */
  
 /* byte of state button */
-static uint16_t s_byte_check_state_button = 0x0000U;
+uint16_t s_byte_check_state_button = 0x0000U;
 
 /**
  *  @brief      CHECK state of button in interrupt and toggle relay
@@ -66,10 +63,17 @@ void CHECK_button_it(uint16_t GPIO_Pin)
 	/* toggle relay pin */
 	RELAY_action(s_byte_check_state_button);
 	
-	/* update state buttton */
-	byte_state_relay_last = s_byte_check_state_button;
-	
 	/* flag state toggle*/
 	flag_button_toggle_state = true;
 }
 
+/**
+ *  @brief      update state button
+ *  
+ *  @param[in]   GPIO_Pin       GPIO pins button 
+ */
+void CHECK_button_update(uint16_t data_control)
+{
+	/* update byte state button */
+	s_byte_check_state_button = data_control;
+}

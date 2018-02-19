@@ -31,4 +31,11 @@
  */
 void CHECK_button_it(uint16_t GPIO_Pin);
 
+/**
+ *  @brief      update state button
+ *  
+ *  @param[in]   GPIO_Pin       GPIO pins button 
+ */
+void CHECK_button_update(uint16_t data_control);
+
 #endif /* _CHECK_STATE_H */

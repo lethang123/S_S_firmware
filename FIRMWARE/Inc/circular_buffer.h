@@ -79,4 +79,6 @@ void circular_buf_get(circular_buf_t *cbuf, uint8_t *data);
 
 uint8_t circular_buf_check(circular_buf_t *cbuf);
 
+void circular_buf_get_array(circular_buf_t *cbuf, uint8_t *array, uint8_t size);
+
 #endif /* _CIRCULAR_BUFFER_H */

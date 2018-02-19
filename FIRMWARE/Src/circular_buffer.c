@@ -98,9 +98,36 @@ void circular_buf_get(circular_buf_t *cbuf, uint8_t *data)
     *data = cbuf->buff[cbuf->tail];
      cbuf->tail = (cbuf->tail + 1) % cbuf->size;
   }
+	else 
+	{
+
+	}
 }
 
 uint8_t circular_buf_check(circular_buf_t *cbuf)
 {
-	return cbuf->buff[cbuf->tail];
+	uint8_t buf_;
+	if(!circular_buf_empty(cbuf))
+  {
+    buf_ = cbuf->buff[cbuf->tail];
+    cbuf->tail = (cbuf->tail + 1) % cbuf->size;
+  }
+	return buf_;
+}
+
+void circular_buf_get_array(circular_buf_t *cbuf, uint8_t *array, uint8_t size)
+{
+	uint8_t count_data;
+	for(count_data = 0 ; count_data < size ; count_data++)
+	{
+		if(!circular_buf_empty(cbuf))
+		{
+			array[count_data] = cbuf->buff[cbuf->tail];
+			cbuf->tail = (cbuf->tail + 1) % cbuf->size;
+		}
+		else
+		{
+			return ;
+		}
+	}
 }

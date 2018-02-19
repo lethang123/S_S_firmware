@@ -263,6 +263,7 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 	{
 		circular_buf_put(&cbuf1,commu_buf_rx);
 		HAL_UART_Receive_IT(COMMU,(uint8_t *)&commu_buf_rx,1);
+		
 	}
 }
 /* USER CODE END 1 */

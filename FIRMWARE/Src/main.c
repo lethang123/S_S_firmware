@@ -54,6 +54,8 @@
 /* Private variables ---------------------------------------------------------*/
 extern bool flag_button_toggle_state;
 extern uint16_t byte_state_relay_last;
+extern circular_buf_t cbuf1;
+ 
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -123,16 +125,20 @@ int main(void)
   /* USER CODE END WHILE */
 
   /* USER CODE BEGIN 3 */
+	/*******************************************************************************/
   if(flag_button_toggle_state == true)
 	 {
-	//	 COMMU_trans_state_relay();
+		 /* if press button then transmition state relay */
+		 COMMU_trans_state_relay(DIR_ACTION);
+		 /* for debug*/
 		 printf("%d\r\n",byte_state_relay_last);
-	//	 RELAY_action(byte_state_relay_last);
+		 /* clean flag*/
 		 flag_button_toggle_state = false;
 	 }
-	// COMMU_get_data_control();
-//		printf("hello\r\n");
-//		HAL_Delay(500);
+	 COMMU_get_data_control();
+	
+	/*******************************************************************************/
+	 
   }
   /* USER CODE END 3 */
 
