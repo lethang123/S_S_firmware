@@ -19,15 +19,14 @@
 /*********************************************************************************
  * DEFINE
  */
-#define CBUF_SIZE_DATA     50
-#define MAX_DATA_FRAME     8
+#define CBUF_SIZE_DATA           50
+#define MAX_DATA_FRAME_TRANS     8
 
 /*********************************************************************************
  * EXTERN VARIABLES
  */
 
 /* using for transmition state relay */
-extern bool flag_button_toggle_state;
 extern uint16_t byte_state_relay_last;
 
 /*********************************************************************************
@@ -36,23 +35,22 @@ extern uint16_t byte_state_relay_last;
 
 /* buffer data for circular_buf_t */
 static uint8_t volatile cbuf_array_uart1[CBUF_SIZE_DATA];
-/* save data of frame */
-/*
-static uint8_t buf;
+
+/* check head byte of frame */
 static uint8_t check_head_byte_one;
 static uint8_t check_head_byte_two;
+
+/* length of data frame */
 static uint8_t dlength;
-static uint8_t action_byte;
-static uint8_t data_control_state_relay_uint8_one;
-static uint8_t data_control_state_relay_uint8_two;
-static uint8_t crc_data;
-static uint8_t tail_data;*/
+
+/* data control get in frame */
 static uint16_t data_control_state_relay_uint16;
-static uint8_t check_head_byte_one;
-static uint8_t dlength;
+
+ /* save data of frame */
 static uint8_t frame_data_get[10];
+
 /* using for transmition state ralay */
-static uint8_t data_state_relay_transmit[MAX_DATA_FRAME];
+static uint8_t data_state_relay_transmit[MAX_DATA_FRAME_TRANS];
 
  /*********************************************************************************
  * GLOBAL VARIABLES
@@ -68,6 +66,7 @@ volatile uint8_t commu_buf_rx;
 circular_buf_t cbuf1;
 
 
+
 static void get_data_control_state_relay(void)
 {
   
@@ -75,6 +74,9 @@ static void get_data_control_state_relay(void)
 	data_control_state_relay_uint16 = data_control_state_relay_uint16 << 8 | frame_data_get[2];
 }
 
+/**
+ *  @brief      COMMU initialize
+ */
 void COMMU_init(void)
 {
 	/* circular buffer init function */
@@ -84,46 +86,64 @@ void COMMU_init(void)
 	HAL_UART_Receive_IT(COMMU,(uint8_t *)&commu_buf_rx,1);
 }
 
+/**
+ *  @brief      COMMU get data control 
+ */
 void COMMU_get_data_control(void)
 {
 	if(!circular_buf_empty(&cbuf1))
 	{
-		if(circular_buf_check(&cbuf1) == HEAD_BYTE)
+		/* check head byte frist */
+		circular_buf_get(&cbuf1,&check_head_byte_one);
+		
+		if(check_head_byte_one == HEAD_BYTE)
 		{
-			circular_buf_get(&cbuf1,&check_head_byte_one);
-			printf("%d\n\r",check_head_byte_one);
-			if( check_head_byte_one == HEAD_BYTE)
+	//		printf("head one is %d\n\r",check_head_byte_one);
+			
+			/* check head byte second */
+			circular_buf_get(&cbuf1,&check_head_byte_two);
+			
+			if(check_head_byte_two == HEAD_BYTE)
 			{
-				/* get byte data length */
-				circular_buf_get(&cbuf1,&dlength);
-				printf("%d\r\n",dlength);
+	//			printf("head two is %d\n\r",check_head_byte_one);
+				/* get dleng byte */
+        circular_buf_get(&cbuf1,&dlength);
+	//			printf("dlength is %d\n\r",dlength);
 				
 				/* get all data of frame */
 				circular_buf_get_array(&cbuf1,frame_data_get,dlength - 1);
-			}
-			
-			/* if action is check */
-			if(frame_data_get[0] == DIR_CHECK)
-			{
-				COMMU_trans_state_relay(DIR_CHECK);
-			}
-			
-			/* if action is control relay */
-			if(frame_data_get[0] == DIR_ACTION)
-			{
-				/* get data control relay */
-				get_data_control_state_relay();
 				
-				/* toggle state relay */
-				RELAY_action(data_control_state_relay_uint16);
+	//			printf("data 1 is %d\n\r",frame_data_get[0]);
+	//			printf("data 2 is %d\n\r",frame_data_get[1]);
+	//			printf("data 3 is %d\n\r",frame_data_get[2]);
+	//			printf("data 4 is %d\n\r",frame_data_get[3]);
 				
-				/* update state for button */
-				CHECK_button_update(data_control_state_relay_uint16);
+				/* if action control is check state of relay */
+				if(frame_data_get[0] == DIR_CHECK)
+				{
+					/* transmition state of relay */
+					COMMU_trans_state_relay(DIR_CHECK);
+				}
+				
+				/* if action control is toggle state of relay */
+				if(frame_data_get[0] == DIR_ACTION)
+				{
+					/* get data control relay */
+					get_data_control_state_relay();
+					
+					/* toggle state relay */
+					RELAY_action(data_control_state_relay_uint16);
+					
+					/* update state for button */
+					CHECK_button_update(data_control_state_relay_uint16);
+				}
 			}
 		}
-	}
+  }
 }
-
+/**
+ *  @brief      COMMU transmition state relay 
+ */
 void COMMU_trans_state_relay(uint8_t dir_data)
 {
 	/* set data for transmition */
@@ -144,5 +164,5 @@ void COMMU_trans_state_relay(uint8_t dir_data)
 	data_state_relay_transmit[7] = TAIL_BYTE;
 	
 	/* transmition frame data state relay */
-	HAL_UART_Transmit(COMMU, (uint8_t*)data_state_relay_transmit,MAX_DATA_FRAME,100);
+	HAL_UART_Transmit(COMMU, (uint8_t*)data_state_relay_transmit,MAX_DATA_FRAME_TRANS,100);
 }

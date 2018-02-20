@@ -177,32 +177,32 @@
         <Ww>
           <count>0</count>
           <WinNumber>2</WinNumber>
-          <ItemText>check_head_byte_two</ItemText>
+          <ItemText>data_control_state_relay_uint16</ItemText>
         </Ww>
         <Ww>
           <count>1</count>
           <WinNumber>2</WinNumber>
-          <ItemText>data_farme</ItemText>
+          <ItemText>byte_state_relay_last</ItemText>
         </Ww>
         <Ww>
           <count>2</count>
           <WinNumber>2</WinNumber>
-          <ItemText>data_control_state_relay_uint16</ItemText>
+          <ItemText>s_byte_check_state_button</ItemText>
         </Ww>
         <Ww>
           <count>3</count>
           <WinNumber>2</WinNumber>
-          <ItemText>byte_state_relay_last</ItemText>
+          <ItemText>data_control_state_relay_uint16</ItemText>
         </Ww>
         <Ww>
           <count>4</count>
           <WinNumber>2</WinNumber>
-          <ItemText>s_byte_check_state_button</ItemText>
+          <ItemText>frame_data_get</ItemText>
         </Ww>
         <Ww>
           <count>5</count>
           <WinNumber>2</WinNumber>
-          <ItemText>data_control_state_relay_uint16</ItemText>
+          <ItemText>check_head_byte_one</ItemText>
         </Ww>
       </WatchWindow2>
       <MemoryWindow1>
