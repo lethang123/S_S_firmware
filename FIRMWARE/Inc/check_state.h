@@ -19,10 +19,9 @@
  */
  
 /* Button pin define */
-#define BUTTON_1       GPIO_PIN_10
-#define BUTTON_2       GPIO_PIN_11
-#define BUTTON_3       GPIO_PIN_12
-#define BUTTON_4       GPIO_PIN_13
+#define BUTTON_1       GPIO_PIN_12
+#define BUTTON_2       GPIO_PIN_14
+#define BUTTON_3       GPIO_PIN_13
 
 /**
  *  @brief      CHECK state of button in interrupt

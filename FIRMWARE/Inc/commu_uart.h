@@ -24,8 +24,9 @@
 #define DLEN_DATA_TRANS          0x05
 #define DIR_CHECK                0x00
 #define DIR_ACTION               0x01
+#define DIR_ACTION_ONE           0x02
 #define CRC_BUF                  0x00
-#define TAIL_BYTE                0xFF
+#define TAIL_BYTE                0x55
 
 
 /**

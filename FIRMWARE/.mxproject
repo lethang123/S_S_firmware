@@ -1,7 +1,7 @@
 [PreviousGenFiles]
-HeaderPath=C:/Users/ngocm/OneDrive/Documents/GitHub/S_S_firmware/FIRMWARE/Inc
+HeaderPath=E:/S_S_firmware/FIRMWARE/Inc
 HeaderFiles=gpio.h;tim.h;usart.h;stm32f1xx_it.h;stm32f1xx_hal_conf.h;main.h;
-SourcePath=C:/Users/ngocm/OneDrive/Documents/GitHub/S_S_firmware/FIRMWARE/Src
+SourcePath=E:/S_S_firmware/FIRMWARE/Src
 SourceFiles=gpio.c;tim.c;usart.c;stm32f1xx_it.c;stm32f1xx_hal_msp.c;main.c;
 
 [PreviousLibFiles]

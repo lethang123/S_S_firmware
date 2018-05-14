@@ -40,24 +40,21 @@ void CHECK_button_it(uint16_t GPIO_Pin)
 	if(GPIO_Pin == BUTTON_1)
 	{
 		s_byte_check_state_button = s_byte_check_state_button ^ (0x1000);
+		printf("a");
 	}
 	
 	/* if button 2 */
 	if(GPIO_Pin == BUTTON_2)
 	{
 		s_byte_check_state_button = s_byte_check_state_button ^ (0x0100);
+		printf("b");
 	}
 	
 	/* if button 3 */
 	if(GPIO_Pin == BUTTON_3)
 	{
 		s_byte_check_state_button = s_byte_check_state_button ^ (0x0010);
-	}
-	
-	/* if button 4 */
-	if(GPIO_Pin == BUTTON_4)
-	{
-		s_byte_check_state_button = s_byte_check_state_button ^ (0x0001);
+		printf("c");
 	}
 	
 	/* toggle relay pin */
